@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height:100%
+}
+
+body{
+      font-family: Arial;
+}
+
+
+nav{
+    display: flex;
+    /* position: sticky and top:0; works for making the navbar 
+    "fixed" and keep the page flow correct. If you use position: fixed
+    the flow of the page breaks and proceeding elements will overlap
+    the navbar*/
+    position:sticky; 
+    top:0;
+    min-width: 100%;
+    background-color: rgb(20, 19, 18);
+    justify-content: center;
+}
+
+nav a{
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-right:1px solid white;
+}
+
+/* .spacer{
+    height: inherit;
+    position: static;
+} */
+
+.backgroundImg {
+    background-image: url(images/Pic_Alaska.jpg);
+    min-height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media screen and (max-width:600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a{
+        border-bottom:1px solid white;
+    }
+}
