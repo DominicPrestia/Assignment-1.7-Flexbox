@@ -33,7 +33,7 @@ nav a{
     text-decoration: none;
     color: white;
     text-align: center;
-    border-right:1px solid white;
+    border-right:1px solid slategray;
 }
 
 .backgroundImg {
@@ -67,6 +67,7 @@ nav a{
 .row{
     display: flex;
     flex-wrap:wrap;
+    justify-content: center;
 }
  
 .aboutme{
@@ -90,11 +91,15 @@ nav a{
     overflow:scroll;
     overflow-x:hidden;
     padding: 2%;
+    color:white;
     background-color: black;
 }
 
-
-
+.gallerycontainer h1{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
 .gallerycolumns {
     flex:33%;
     min-width: 200px;
@@ -102,13 +107,41 @@ nav a{
     align-items: center;
 }
 
-
-
 .gallerycolumns img{
     width: 100%;
     vertical-align: middle;
     padding: 4px;
 }
+
+.contactform{
+    flex:100%;
+    background-color: black;
+    color: white;
+    border-top: 1px solid slategray;
+    padding-top:100px;
+}
+
+
+.contactform h1{
+    width: 100%;
+    flex: 100%;
+    text-align: center;
+}
+
+.contactform .innerform{
+    text-align: center;
+    padding:50px;
+}
+
+.innerform label{
+    font-size: 22px;
+}
+
+.innerform input, textarea{
+    margin: 20px;
+}
+
+
 
 
 
